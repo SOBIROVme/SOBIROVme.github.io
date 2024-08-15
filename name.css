@@ -1,0 +1,47 @@
+.text-1 {
+    color: red;
+}
+
+.text-2 {
+    color: orange;
+}
+
+.text-3 {
+    color: green;
+}
+
+.text-4 {
+    color: #794444;
+}
+
+.text-5 {
+    color: #79446D;
+}
+
+.text-6 {
+    color: #603939;
+}
+
+.text-7 {
+    color: rgb(0, 110, 255);
+}
+
+.text-8 {
+    color: rgb(96, 124, 34);
+}
+
+.text-9 {
+    color: rgb( 78, 29, 29);
+}
+
+.text-10 {
+    color: rgba(67, 155, 155, 0.45);
+}
+
+.text-11 {
+    color: rgba(0, 79, 255, 1.0);
+}
+
+.text-12 {
+    color: rgba(174, 0, 255, 0.65);
+}
