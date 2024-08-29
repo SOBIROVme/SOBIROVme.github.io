@@ -1,0 +1,23 @@
+h1{
+	background-color: blue;
+	display: inline;
+}
+
+p{
+	display: block;
+}
+
+select{
+	display: inline;
+}
+
+.inine-block-element{
+	width: 100px;
+	display: inline-block;
+
+	margin-bottom: 10px;
+	background-color: dodgerblue;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
