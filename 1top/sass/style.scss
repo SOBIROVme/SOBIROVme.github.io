@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 $backgroundimg: url("box.svg") no-repeat center;
 $colorfull: #fff;
-$fonts: Poppins;
 $border: 2px solid;
+@mixin font {
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,10 +34,7 @@ body {
             backdrop-filter: blur(40px);
         }
         .title {
-            font-family: $fonts;
-            font-size: 32px;
-            font-weight: 600;
-            line-height: 48px;
+            @include font;
             color: $colorfull;
             margin-bottom: 41px;
             text-align: center;
@@ -43,22 +46,11 @@ body {
             border: none;
             border-bottom: 2px solid $colorfull;
             outline: none;
-            font-family: $fonts;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
+            @include font;
             text-align: left;
             color: $colorfull;
             padding: 21px 0 0 4px;
             margin-bottom: 46px;
-        }
-        input::placeholder {
-            font-family: $fonts;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-            text-align: left;
-            color: $colorfull;
         }
         .check {
             display: flex;
@@ -66,24 +58,13 @@ body {
             justify-content: center;
             margin-bottom: 41px;
         }
-        .check label {
-            font-family: $fonts;
-            font-size: 12px;
-            font-weight: 400;
-            line-height: 18px;
-            text-align: center;
-            color: $colorfull;
-        }
         input[type="submit"] {
             display: block;
             margin: 0 auto;
             width: 250px !important;
             height: 48px !important;
             border-radius: 20px;
-            font-family: $fonts;
-            font-size: 24px !important;
-            font-weight: 600 !important;
-            line-height: 36px !important;
+            @include font;
             text-align: center !important;
             border: none !important;
             padding: 0 !important;
