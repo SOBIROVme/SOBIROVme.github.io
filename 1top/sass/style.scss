@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+$backgroundimg: url("box.svg") no-repeat center;
+$colorfull: #fff;
+$fonts: Poppins;
+$border: 2px solid;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    .box {
+        max-width: 100%;
+        height: 100vh;
+        background: $backgroundimg;
+        background-size: cover;
+        form {
+            width: 478px;
+            height: 520px;
+            border-radius: 20px;
+            border: $colorfull, $border;
+            position: relative;
+            left: calc(50% - 478px / 2);
+            top: calc(50% - 520px / 2);
+            padding: 30px 39px 77px;
+            backdrop-filter: blur(40px);
+        }
+        .title {
+            font-family: $fonts;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 48px;
+            color: $colorfull;
+            margin-bottom: 41px;
+            text-align: center;
+        }
+        input:not(#checked) {
+            width: 400px;
+            height: 48px;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid $colorfull;
+            outline: none;
+            font-family: $fonts;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $colorfull;
+            padding: 21px 0 0 4px;
+            margin-bottom: 46px;
+        }
+        input::placeholder {
+            font-family: $fonts;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: $colorfull;
+        }
+        .check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 41px;
+        }
+        .check label {
+            font-family: $fonts;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            color: $colorfull;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            width: 250px !important;
+            height: 48px !important;
+            border-radius: 20px;
+            font-family: $fonts;
+            font-size: 24px !important;
+            font-weight: 600 !important;
+            line-height: 36px !important;
+            text-align: center !important;
+            border: none !important;
+            padding: 0 !important;
+            background: #DB5F19 !important;
+            cursor: pointer;
+        }
+        input[type="checkbox"] {
+            width: 13px;
+            height: 13px;
+            margin-right: 6px;
+            cursor: pointer;
+        }
+    }
+}
